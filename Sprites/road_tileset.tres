@@ -1,0 +1,75 @@
+[gd_resource type="TileSet" load_steps=8 format=2]
+
+[ext_resource path="res://Sprites/curve.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/straight_road.png" type="Texture" id=2]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( -0.135178, -20.8127 )
+b = Vector2( 0.218369, 12.4213 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( 0.218353, 41.0591 )
+b = Vector2( -0.135193, 7.8251 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( 0.81971, -12.863 )
+b = Vector2( 0.466156, 10.8251 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( 10.0121, -1.19571 )
+b = Vector2( 0.112617, 7.99667 )
+
+[sub_resource type="SegmentShape2D" id=5]
+b = Vector2( 23.0935, -0.488609 )
+
+[resource]
+0/name = "straight_road"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 16, 16 )
+0/navigation_offset = Vector2( 16, 16 )
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0.797226, 20.2426 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 31.5564, -8.74872 )
+} ]
+0/z_index = 0
+1/name = "curve"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 32 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 16, 16 )
+1/navigation_offset = Vector2( 16, 16 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0.090126, 21.6569 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0.443665, 1.15078 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 10.3432, 0.0901184 )
+} ]
+1/z_index = 0

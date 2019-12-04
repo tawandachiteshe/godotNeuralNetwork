@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/road_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://car.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/main.gd" type="Script" id=3]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 194, 357 )
+scale = Vector2( 2, 2 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+collision_use_kinematic = true
+collision_layer = 2
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( -262143, 1, 0, -262142, -1073741824, 0, -262141, -1073741824, 0, -262140, -1073741824, 0, -262139, -1073741824, 0, -262138, -1073741824, 0, -262137, -1073741824, 0, -262136, -1610612735, 0, -196607, 0, 0, -196600, 0, 0, -131071, 0, 0, -131064, 0, 0, -65535, 0, 0, -65528, 0, 0, 1, 0, 0, 8, 0, 0, 65537, 0, 0, 65544, 0, 0, 131073, -1073741823, 0, 131074, -1073741824, 0, 131075, -1073741824, 0, 131076, -1073741824, 0, 131077, -1073741824, 0, 131078, -1073741824, 0, 131079, -1073741824, 0, 131080, 1610612737, 0 )
+
+[node name="car" parent="." instance=ExtResource( 2 )]
+position = Vector2( 337, 517 )
+scale = Vector2( 1.5, 1.5 )
